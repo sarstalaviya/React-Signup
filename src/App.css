@@ -1,0 +1,205 @@
+.login{
+  text-align: center;
+  margin:20px;
+}
+button{
+  border-radius: 20px;
+}
+
+
+
+
+
+.toggle-label {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin: 35px auto;
+  cursor: default;
+  text-transform: uppercase;
+}
+.toggle-label * {
+  transition: all 200ms linear;
+}
+.toggle-label input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.toggle-label input[type="checkbox"]:checked + .base-color .toggle-slider {
+  margin-left: 43.5%;
+}
+.toggle-label input[type="checkbox"]:checked + .base-color .cash {
+  color: #fff;
+}
+.toggle-label input[type="checkbox"]:checked + .base-color .token {
+  color: #000;
+}
+.toggle-label input[type="checkbox"] + .base-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 150ms linear;
+  background-color: #121212;
+  border-radius: 32px;
+}
+.toggle-label input[type="checkbox"] + .base-color .toggle-slider {
+  display: block;
+  position: absolute;
+  content: " ";
+  background: #10FF8D;
+  width: 55%;
+  height: 100%;
+  transition: margin 300ms linear;
+  border-radius: 32px;
+  height: 46px;
+  top: 2px;
+  left: 2px;
+  background-image: linear-gradient(#10FF8D 0%, #10FF8D 100%);
+}
+.toggle-label input[type="checkbox"] + .base-color .cash {
+  color: #000;
+}
+.toggle-label .cash, .toggle-label .token {
+  display: block;
+  position: absolute;
+  width: 50%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+.toggle-label .cash {
+  left: 0px;
+}
+.toggle-label .token {
+  right: 0px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  max-width: 790px;
+  margin: 35px auto;
+  box-shadow: 0 0 3px 2px rgba(28, 30, 31, 0.07);
+}
+.details img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation-name: fadeInRight;
+}
+.details .img-wrap {
+  align-self: flex-start;
+  border-right: 1px solid #f7fafb;
+}
+.details .details-wrap {
+  padding-left: 5%;
+  transition: transform 0.45s, opacity 0.25s;
+}
+.details .brand {
+  color: rgba(28, 30, 31, 0.5);
+}
+.details [class*="price-"] {
+  font-size: 1.7em;
+}
+.details .price-tokens {
+  display: none;
+  opacity: 0;
+}
+.details.tokens-selected .price-tokens {
+  display: block;
+  opacity: 1;
+}
+.details.tokens-selected .price-cash {
+  display: none;
+  opacity: 0;
+}
+.text-center{
+  text-align: center;
+}
+.text-center h2 {
+  color: #fff;
+}
+.background-color{
+  background-color: #121212;
+}
+.App{
+  background-color: #242424;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form-main-warp input {
+  background-color: transparent;
+  border: 2px solid #10FF8D;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 35px;
+  padding: 0 15px;
+  color: white;
+}
+
+.form-main-warp label {
+  float: left;
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+}
+.form-main-warp form {
+  display: table;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+}
+.App {
+  background-color: #242424;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 800px;
+}
+body{
+  background-color: #121212;
+}
+.check-warp span {
+  color: #10FF8D;
+  
+}
+.check-warp {
+  color: #fff;
+  align-self: center;
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.checkBox {
+  height: auto !important;
+  width: auto !important;
+  align-self: center;
+}
+.form-main-warp button {
+  display: table;
+  margin: 0 auto;
+  background-color: #10FF8D;
+  border: 0;
+  padding: 10px 40px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.error-label{
+  color: red;
+}
+
+.check{
+  display: flex;
+  margin: 0;
+}
